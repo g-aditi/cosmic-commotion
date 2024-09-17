@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Homework #5: Custom Visualization Design - CSE 578 - Spring 2024 - Aditi Ganapathi - aganap12@asu.edu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="galaxy"></div>
+  <h1>Homework #5: Custom Visualization Design - Cosmic Commotion</h1>
+  <h2>Aditi Ganapathi - aganap12@asu.edu</h2>
+  <p>Click anywhere on the screen to remove tooltips!</p>
+  <div id="container">
+    <div id="svg-column">
+      <div id="svg-container">
+        <div id="tooltip" style="position: absolute; display: none; padding: 5px; background-color: white; border: 1px solid #ccc; border-radius: 3px;"></div>
+      </div>
+    </div>
+    <div id="text-column">
+      <p style="text-align: left;">
+        The visualization provides an interactive and engaging experience exploring the orbits of near-Earth comets. 
+        All the objects in the visualization are to-scale.
+        <br><br>
+        <b>Marks:</b>
+        <br>
+        1. Lines: Representing the orbits of comets around the sun.
+        <br><br>
+        2. Points: Depicting the comets themselves as they move along their orbits.
+        <br><br>
+        3. Images: Displaying the sun's position and adding a visual anchor for the orbits.
+        <br><br>
+        <b>Channels:</b>
+        <br>
+        1. Position: Used to illustrate the comets' movement along their orbits relative to the sun and other comets. This
+        follows Kepler's 2nd Law and plots a combination of eccentricity (e), time period (TP), distance at perihelion (q)
+        distance at aphelion (Q), and orbital period (P) all normalized and scaled down.
+        <br><br>
+        2. Size: Depending on the Minimum Orbit Intersection Distance (MOID).
+        <br><br>
+        <b>Interactions:</b>
+        <br>
+        1. Mouseover: Revealing detailed information about the comets in a tooltip.
+        <br><br>
+        2. Click: Dismissing the tooltip and reducing the opacity of comet paths when clicked.
+        <br><br>
+        <b>Category: Combinatorial Visualization</b>
+        <br>
+        The "Cosmic Commotion: Charting Celestial Trajectories" visualization is combinatorial, integrating lines for comet 
+        orbits, circles for comets, and an image of the sun. Interactive tooltips display comet details when hovering, and 
+        real-time animation shows comets in motion for a dynamic experience.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
